@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/inventoryItemImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/inventoryItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/inventoryItemType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/inventoryMoneySpent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gastos: $0"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/inventoryMeasurement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cantidad: "
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/inventoryCurrentAmount"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:hint="Cantidad"
+                android:inputType="numberDecimal"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/removeInventoryItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remover"
+        android:textSize="14sp" />
+
+</LinearLayout>
